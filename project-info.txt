@@ -1,0 +1,26 @@
+ project for codeoasis !
+
+nir lipsitz 
+05342224666
+
+
+NODEJS SERVER :
+- EXPRESS
+- NODEMON
+- PASSPORT
+- API USERS SYSTEM (REGISTER/LOGIN)
+- TOKEN
+- MONGODB (db-export included)
+
+ANGULAR 6 CLIENT :
+- COMPONENTS (LOGIN,SIGNUP,ADMIN,LAYOUT,NAVBAR)
+- SERVICES (USER,OMDB)
+- ROUTES
+- HTTP
+- USER ROLE VALIDATION
+- LOCALSTORAGE
+
+
+I really enjoyed the job
+
+I have motivation and a very high self learning ability

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="jumbotron">
+        <div style="text-align:center">
+            <h3>Welcome {{userinfo.firstName}}</h3>
+        </div>
+
+        <form (ngSubmit)="searchdata()" #searchDataForm="ngForm">
+            <div class="form-group-row col-lg-8">
+                <label for="s">movie title</label>
+                <input #title (keyup)="searchdata(title.value)" type="text" placeholder="search" [(ngModel)]="searchData.s"
+                    placeholder="Movie Title" name="s" class="form-control" required>
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="y">year</label>
+                <select [(ngModel)]="searchData.y" name="y" class="form-control" #year (keyup)="searchdata(year.value)">
+                    <option value=""></option>
+                    <option *ngFor="let year of yearsArray" value="{{year}}">{{year}}</option>
+                </select>
+                <p>*submit to search by year</p>
+            </div><br>
+            <button class="btn btn-success btn-block" type="submit" [disabled]="!searchDataForm.form.valid">SUBMIT</button>
+        </form>
+    </div>
+    <br>
+
+    <div *ngIf="maindata; else elseblcok">
+        <h2>{{status}}</h2>
+        <div *ngFor="let i of maindata.Search" class="card col-lg-4">
+                <img class="card-img-top" src="{{i.Poster}}" alt="Poster" width="250" height="250">
+            <div class="card-body">
+                <h4 class="card-title">{{i.Title}}</h4>
+                <p class="card-text"> Year : {{i.Year}}</p>
+                <p class="card-text">imdbID : {{i.imdbID}}</p>
+            </div>
+           
+        </div>
+
+
+    </div>
+    <ng-template #elseblcok>
+        <h3>Please Search for movies</h3>
+    </ng-template>
+
+</div>

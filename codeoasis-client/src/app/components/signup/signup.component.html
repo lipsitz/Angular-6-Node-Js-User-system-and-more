@@ -1,0 +1,20 @@
+<div class="container">
+  <form class="form-signin" (ngSubmit)="signup()" #signupForm="ngForm">
+    <h2 class="form-signin-heading">Sign Up Now</h2>
+    <label for="firstName">first Name</label>
+    <input type="text" class="form-control" placeholder="first Name" [(ngModel)]="signupData.firstName" name="firstName" required/>
+    <label for="lastName">last Name</label>
+    <input type="text" class="form-control" placeholder="last Name" [(ngModel)]="signupData.lastName" name="lastName" required/>
+    <label for="inputEmail">Email address</label>
+    <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="signupData.email" name="email" required/>
+    <label for="inputPassword">Password</label>
+    <input type="password" class="form-control" placeholder="Password" [(ngModel)]="signupData.password" name="password" required/>
+    <label for="role">User role</label>
+    <select class="form-control" placeholder="role" [(ngModel)]="signupData.role" name="role" required>
+      <option value="member">Member</option>
+      <option value="admin" disabled>Admin</option>
+    </select>
+    <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!signupForm.form.valid">Sign Up</button>
+  </form>
+</div>

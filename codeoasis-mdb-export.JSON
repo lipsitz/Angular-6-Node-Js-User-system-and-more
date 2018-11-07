@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5be0e7d467807f331c4f3f97"},"firstName":"codeoasis","lastName":"codeoasis","email":"codeoasis@gmail.com","password":"$2a$10$.k4GpSsc/59jndAcpniyievwKvYHcjj7OGdHTCv9nlA4MajAJBRJO","role":"member","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5be23a54b27b34448c574b0f"},"firstName":"admin name","lastName":"admin last name","email":"admin@gmail.com","password":"$2a$10$RhdWJxc4l.6po2CEI97fLOkNo0XKml1MWAXdYqBxC3uAudvQYyE2e","role":"admin","__v":{"$numberInt":"0"}}
